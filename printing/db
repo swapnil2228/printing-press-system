@@ -1,0 +1,9 @@
+create table customerdetail(customer_no int primary key, customer_name varchar(20),customer_address varchar(50),contact_no numeric,email_id varchar(20));
+create table jobdetail(job_id int primary key, job_name varchar(20),no_of_books numeric);
+create table dtpjobcard(printing_type varchar(20), color_type varchar(20),color1 varchar(20),color2 varchar(20),sample_no int,format varchar(20));
+ create table printingjobcard(printing_type varchar(20), color_type varchar(20),color1 varchar(20),color2 varchar(20),product_size varchar(20),paper_type varchar(20),binding_method varchar(20),use_of varchar(20),quantity int);
+create table bindingjpobcard(printing_type varchar(20),product_size varchar(20),binding_type varchar(20),binding_method varchar(20),lamination_type varchar(20),number_of_books int, pages_per_book int,numebering_from int);
+create table operator(opname varchar(20) primary key,login_id varchar(20),password varchar(20),confirm_password varchar(20));
+create table updateop(new_password varchar(20), confirm_password varchar(20));
+create table upcust(name varchar(20),address varchar(60),contact_no numeric,email_id varchar(20));
+

@@ -1,0 +1,198 @@
+<html>
+<head>
+<script>
+ function test()
+{
+        var amt=prompt("Enter Advance Amount in Rs. ");
+      alert(amt);
+       if(amt==null)
+          alert("not");
+      else
+       alert("Your printing job may Delivered to you within 5 days");
+
+}
+function test1()
+{
+  alert("You canceled job");
+}
+
+        </script>
+<head>
+
+<link href="style.css" type="text/css" rel="stylesheet" >
+</head>
+
+<body background="images (9).jpg">
+<font color="red">
+<center><h1>SR Printing Press</h1></center></font>
+
+
+<ul>
+		<li><a>File</a>
+			<ul>
+				<li><a href="newcust.html">New</a></li>
+                                
+                                <li><a href="login.html">Exit</a></li>
+			</ul>
+		</li>
+		<li><a>Samples</a>
+                        <ul>
+                                <li><a>Show</a></li>
+                        </ul>
+                </li>
+		<li><a>Job Schedule</a>
+                        <ul>
+                                <li><a>Job Schedule</a>
+                        <ul>
+                                <li><a href="pdetails.php">Printing Job Card</a></li>
+				  <li><a href="bdetails.php">Binding Job Card</a></li>                                
+				<li><a href="ddetails.php">DTP Job Cards</a></li>
+                        </ul>
+                        </ul>
+                </li>
+		<!--<li><a>Department</a>
+                        <ul>
+                                <li><a>DTP Department</a></li>
+                                <li><a>Printng Department</a></li>
+                                <li><a>Binding Department</a></li>
+                        </ul>
+                </li>
+		<li><a>Delivery</a>
+                        <ul>
+                                <li><a>Delivery Details</a></li>
+                        </ul>
+		</li>-->
+		<li><a>LogOut</a>
+                        <ul>
+                                <li><a href="login.html">LogOut</a></li>
+                        </ul>
+                </li>
+		<li><a>Help</a>
+                        <ul>
+                                <li><a href="help.html">Content</a></li>
+				<li><a href="aboutus.html">About us</a></li>
+                        </ul>
+                </li>
+		<li><a href="feedback.html">Feedback</a></li>
+                   
+
+
+	</ul>
+<br><br>
+<body>
+<fieldset>
+	<legend>DTP Details</legend><br><br>
+	<fieldset>
+        Product size<select name="p">
+        <option>1/4
+        <option>A4
+        <option>1/5
+        <option>1/6
+        </select><br><br>
+        <input type=radio name=rd1 value=0>single color
+        <input type=radio name=rd1 value=1>double color
+        <input type=radio name=rd1 value=2>four color
+        <br>
+        <br>
+        color 1<select name="p1">
+        <option>red
+        <option>green
+        <option>yellow
+        <option>blue
+        </select><br><br>
+         color 2<select name="p2">
+        <option>black
+        <option>skyblue
+        <option>pink
+        <option>orange
+        </select><br><br>
+
+
+        Design/Sample no.<input type="text" name="p1" >
+        <input type="button" value="browse">
+        <br><br>
+        Format
+  <input type=radio name=rd1 value=0>YES
+        <input type=radio name=rd1 value=1>NO
+
+
+	</fieldset>
+</fieldset>
+<br>
+<br>
+<fieldset>
+        <legend>Printing Detail</legend>
+	<br><br>
+	<fieldset>
+                Quantity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="q">
+                <option>250
+                <option>500
+                <option>1000
+                <option>1500
+                <option>2000
+                <option>5000
+                <option>10000
+                </select><br><br>
+Paper Type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="q1">
+                <option>60GSM
+                <option>70GSM
+                <option>80GSM
+                <option>Art Paper
+                <option>Color Paper
+                <option>New Paper
+                </select><br><br>
+Binding Method&nbsp;&nbsp;<select name="q2">
+                <option>Top Binding
+                <option>Side Binding
+</select><br><br>
+Use of &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type=radio name=rd1 value=0>Master
+<input type=radio name=rd1 value=1>Plate
+
+</fieldset>
+</fieldset>
+<br>
+<br>
+<fieldset>
+        <legend>Binding Detail</legend>
+        <br>
+        <br>
+	<fieldset>
+                Binding Type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="b">
+                <option>Cover
+                <option>Double&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <option>Cloth
+                </select><br><br>
+Lamination Type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="b1">
+                <option>Simple
+                <option>Mat
+                <option>Spot
+                <option>None
+
+                </select><br><br>
+</select><br><br>
+<input type=radio name=rd1 value=0>Numbering&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" size="1">
+To
+<input type="text" size="1"><br><br>
+<input type=radio name=rd2 name="ch1" value=1>Duplicate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="checkbox" value="a">Duplicate Printed?<br><br>
+<input type=radio name=rd2 name="chk2" value=2>triplicate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="checkbox" value="a">Triplicate printed?<br><br>
+Folding Type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="b">
+                <option>Vertical
+                <option>Horizontal
+                <option>None
+                </select><br><br>
+
+
+		</fieldset>
+</fieldset>
+<br>
+<br>
+<center>
+        <button type="button" style="height: 50px;width:100px">quotation</button>
+        <button type="button" style="height: 50px;width:150px" onclick=test()> Give Order</button>
+        <a href=second.html><button type="button" style="height: 50px;width:100px">Cancel</button></a>
+</center>
+
